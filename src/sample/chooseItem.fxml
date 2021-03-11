@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="340.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.chooseItemController">
+   <children>
+      <Button fx:id="btnMobile" layoutX="104.0" layoutY="36.0" mnemonicParsing="false" onAction="#clickMobile" prefHeight="26.0" prefWidth="132.0" style="-fx-background-color: #c9350c;" text="Mobile Phone" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnWallet" layoutX="104.0" layoutY="69.0" mnemonicParsing="false" onAction="#clickWallet" prefHeight="26.0" prefWidth="132.0" style="-fx-background-color: #00aaff;" text="Wallet">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="104.0" layoutY="102.0" mnemonicParsing="false" onAction="#goBacktoMain" prefHeight="26.0" prefWidth="132.0" text="Log Out">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

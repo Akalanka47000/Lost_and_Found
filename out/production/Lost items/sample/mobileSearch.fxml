@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="258.0" prefWidth="415.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MobileSearch">
+   <children>
+      <Button layoutX="255.0" layoutY="184.0" mnemonicParsing="false" onAction="#Search" style="-fx-background-color: #c9350c;" text="Search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="333.0" layoutY="183.0" mnemonicParsing="false" onAction="#goBacktoFoundOrLost" style="-fx-background-color: #00aaff;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <VBox layoutX="41.0" layoutY="32.0" prefHeight="190.0" prefWidth="179.0">
+         <children>
+            <Label text="Brand:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="13.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Model:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="13.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Building lost in:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="108.0" text="Floor last seen in:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="220.0" layoutY="25.0" prefHeight="130.0" prefWidth="164.0">
+         <children>
+            <TextField fx:id="txtBrand" promptText="Ex: samsung, apple......">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtModel" promptText="Ex: galaxy_s6, iphone_5">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtBuildingLostIn" promptText="Ex: one, three">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtFloorLastSeen" promptText="Es: ground, first , fifth">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
